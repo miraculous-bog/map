@@ -1,0 +1,30 @@
+[
+	{
+		"id": 1,
+		"name": "АЗС №1",
+		"companyName": "BRSM",
+		"address": "вул. Якова Гальчевського 60А",
+		"city": "Вінниця",
+		"fuelTypesAvailableInfo": {
+			"DIESEL": true,
+			"GAS": true,
+			"A92": false,
+			"A95": true
+		},
+		"stationInfoId": 1
+	},
+	{
+		"id": 2,
+		"name": "АЗС №2",
+		"companyName": "BRSM",
+		"address": "Немирівське шосе 84А",
+		"city": "Вінниця",
+		"fuelTypesAvailableInfo": {
+			"DIESEL": true,
+			"GAS": true,
+			"A92": false,
+			"A95": true
+		},
+		"stationInfoId": 2
+	}
+]

@@ -1,0 +1,302 @@
+{
+	status: 200,
+	statusText: 'OK',
+	headers: AxiosHeaders {
+	  date: 'Mon,
+		15 May 2023 21: 19: 08 GMT',
+	  server: 'Apache',
+	  'access-control-allow-origin': '*',
+	  'x-ratelimit-limit': '2500',
+	  'x-ratelimit-remaining': '2483',
+	  'x-ratelimit-reset': '1684195200',
+	  vary: 'Accept-Encoding',
+	  'x-frame-options': 'DENY',
+	  'x-xss-protection': '1; mode=block',
+	  'content-length': '333',
+	  'content-type': 'application/json; charset=utf-8',
+	  'strict-transport-security': 'max-age=31536000; includeSubDomains; preload',
+	  connection: 'close'
+	},
+	config: {
+	  transitional: {
+		silentJSONParsing: true,
+		forcedJSONParsing: true,
+		clarifyTimeoutError: false
+		},
+	  adapter: [ 'xhr', 'http'
+		],
+	  transformRequest: [
+			[Function: transformRequest
+			]
+		],
+	  transformResponse: [
+			[Function: transformResponse
+			]
+		],
+	  timeout: 0,
+	  xsrfCookieName: 'XSRF-TOKEN',
+	  xsrfHeaderName: 'X-XSRF-TOKEN',
+	  maxContentLength: -1,
+	  maxBodyLength: -1,
+	  env: { FormData: [Function
+			], Blob: null
+		},
+	  validateStatus: [Function: validateStatus
+		],
+	  headers: AxiosHeaders {
+		Accept: 'application/json, text/plain, * /*',
+		'User-Agent': 'axios/1.4.0',
+		'Accept-Encoding': 'gzip, compress, deflate, br'
+	  },
+	  method: 'get',
+	  url: 'https://api.opencagedata.com/geocode/v1/json?q=%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F%20%D0%B2%D1%83%D0%BB.%20%D0%AF%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%93%D0%B0%D0%BB%D1%8C%D1%87%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2060%D0%90&key=c039df1ade2949f08282486057b25753',
+	  data: undefined
+	},
+	request: <ref *1> ClientRequest {
+	  _events: [Object: null prototype] {
+		abort: [Function (anonymous)],
+		aborted: [Function (anonymous)],
+		connect: [Function (anonymous)],
+		error: [Function (anonymous)],
+		socket: [Function (anonymous)],
+		timeout: [Function (anonymous)],
+		prefinish: [Function: requestOnPrefinish]
+	  },
+	  _eventsCount: 7,
+	  _maxListeners: undefined,
+	  outputData: [],
+	  outputSize: 0,
+	  writable: true,
+	  destroyed: true,
+	  _last: true,
+	  chunkedEncoding: false,
+	  shouldKeepAlive: false,
+	  maxRequestsOnConnectionReached: false,
+	  _defaultKeepAlive: true,
+	  useChunkedEncodingByDefault: false,
+	  sendDate: false,
+	  _removedConnection: false,
+	  _removedContLen: false,
+	  _removedTE: false,
+	  _contentLength: 0,
+	  _hasBody: true,
+	  _trailer: '',
+	  finished: true,
+	  _headerSent: true,
+	  _closed: true,
+	  socket: TLSSocket {
+		_tlsOptions: [Object],
+		_secureEstablished: true,
+		_securePending: false,
+		_newSessionPending: false,
+		_controlReleased: true,
+		secureConnecting: false,
+		_SNICallback: null,
+		servername: 'api.opencagedata.com',
+		alpnProtocol: false,
+		authorized: true,
+		authorizationError: null,
+		encrypted: true,
+		_events: [Object: null prototype],
+		_eventsCount: 9,
+		connecting: false,
+		_hadError: false,
+		_parent: null,
+		_host: 'api.opencagedata.com',
+		_readableState: [ReadableState],
+		_maxListeners: undefined,
+		_writableState: [WritableState],
+		allowHalfOpen: false,
+		_sockname: null,
+		_pendingData: null,
+		_pendingEncoding: '',
+		server: undefined,
+		_server: null,
+		ssl: null,
+		_requestCert: true,
+		_rejectUnauthorized: true,
+		parser: null,
+		_httpMessage: [Circular *1],
+		write: [Function: writeAfterFIN],
+		[Symbol(res)]: null,
+		[Symbol(verified)]: true,
+		[Symbol(pendingSession)]: null,
+		[Symbol(async_id_symbol)]: 7,
+		[Symbol(kHandle)]: null,
+		[Symbol(lastWriteQueueSize)]: 0,
+		[Symbol(timeout)]: null,
+		[Symbol(kBuffer)]: null,
+		[Symbol(kBufferCb)]: null,
+		[Symbol(kBufferGen)]: null,
+		[Symbol(kCapture)]: false,
+		[Symbol(kSetNoDelay)]: false,
+		[Symbol(kSetKeepAlive)]: true,
+		[Symbol(kSetKeepAliveInitialDelay)]: 60,
+		[Symbol(kBytesRead)]: 785,
+		[Symbol(kBytesWritten)]: 423,
+		[Symbol(connect-options)]: [Object],
+		[Symbol(RequestTimeout)]: undefined
+	  },
+	  _header: 'GET /geocode/v1/json?q=%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F%20%D0%B2%D1%83%D0%BB.%20%D0%AF%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%93%D0%B0%D0%BB%D1%8C%D1%87%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2060%D0%90&key=c039df1ade2949f08282486057b25753 HTTP/1.1\r\n' +
+		'Accept: application/json, text/plain, */*\r\n' +
+		'User-Agent: axios/1.4.0\r\n' +
+		'Accept-Encoding: gzip, compress, deflate, br\r\n' +
+		'Host: api.opencagedata.com\r\n' +
+		'Connection: close\r\n' +
+		'\r\n',
+	  _keepAliveTimeout: 0,
+	  _onPendingData: [Function: nop
+			],
+	  agent: Agent {
+		_events: [Object: null prototype
+				],
+		_eventsCount: 2,
+		_maxListeners: undefined,
+		defaultPort: 443,
+		protocol: 'https:',
+		options: [Object: null prototype
+				],
+		requests: [Object: null prototype
+				] {},
+		sockets: [Object: null prototype
+				] {},
+		freeSockets: [Object: null prototype
+				] {},
+		keepAliveMsecs: 1000,
+		keepAlive: false,
+		maxSockets: Infinity,
+		maxFreeSockets: 256,
+		scheduling: 'lifo',
+		maxTotalSockets: Infinity,
+		totalSocketCount: 0,
+		maxCachedSessions: 100,
+		_sessionCache: [Object
+				],
+				[Symbol(kCapture)
+				]: false
+			},
+	  socketPath: undefined,
+	  method: 'GET',
+	  maxHeaderSize: undefined,
+	  insecureHTTPParser: undefined,
+	  path: '/geocode/v1/json?q=%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F%20%D0%B2%D1%83%D0%BB.%20%D0%AF%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%93%D0%B0%D0%BB%D1%8C%D1%87%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2060%D0%90&key=c039df1ade2949f08282486057b25753',
+	  _ended: true,
+	  res: IncomingMessage {
+		_readableState: [ReadableState
+				],
+		_events: [Object: null prototype
+				],
+		_eventsCount: 4,
+		_maxListeners: undefined,
+		socket: [TLSSocket
+				],
+		httpVersionMajor: 1,
+		httpVersionMinor: 1,
+		httpVersion: '1.1',
+		complete: true,
+		rawHeaders: [Array
+				],
+		rawTrailers: [],
+		aborted: false,
+		upgrade: false,
+		url: '',
+		method: null,
+		statusCode: 200,
+		statusMessage: 'OK',
+		client: [TLSSocket
+				],
+		_consuming: false,
+		_dumped: false,
+		req: [Circular *1
+				],
+		responseUrl: 'https: //api.opencagedata.com/geocode/v1/json?q=%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F%20%D0%B2%D1%83%D0%BB.%20%D0%AF%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%93%D0%B0%D0%BB%D1%8C%D1%87%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2060%D0%90&key=c039df1ade2949f08282486057b25753',
+		redirects: [],
+				[Symbol(kCapture)
+				]: false,
+				[Symbol(kHeaders)
+				]: [Object
+				],
+				[Symbol(kHeadersCount)
+				]: 28,
+				[Symbol(kTrailers)
+				]: null,
+				[Symbol(kTrailersCount)
+				]: 0,
+				[Symbol(RequestTimeout)
+				]: undefined
+			},
+	  aborted: false,
+	  timeoutCb: null,
+	  upgradeOrConnect: false,
+	  parser: null,
+	  maxHeadersCount: null,
+	  reusedSocket: false,
+	  host: 'api.opencagedata.com',
+	  protocol: 'https:',
+	  _redirectable: Writable {
+		_writableState: [WritableState
+				],
+		_events: [Object: null prototype
+				],
+		_eventsCount: 3,
+		_maxListeners: undefined,
+		_options: [Object
+				],
+		_ended: true,
+		_ending: true,
+		_redirectCount: 0,
+		_redirects: [],
+		_requestBodyLength: 0,
+		_requestBodyBuffers: [],
+		_onNativeResponse: [Function (anonymous)
+				],
+		_currentRequest: [Circular *1
+				],
+		_currentUrl: 'https: //api.opencagedata.com/geocode/v1/json?q=%D0%92%D1%96%D0%BD%D0%BD%D0%B8%D1%86%D1%8F%20%D0%B2%D1%83%D0%BB.%20%D0%AF%D0%BA%D0%BE%D0%B2%D0%B0%20%D0%93%D0%B0%D0%BB%D1%8C%D1%87%D0%B5%D0%B2%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE%2060%D0%90&key=c039df1ade2949f08282486057b25753',
+				[Symbol(kCapture)
+				]: false
+			},
+			[Symbol(kCapture)
+			]: false,
+			[Symbol(kNeedDrain)
+			]: false,
+			[Symbol(corked)
+			]: 0,
+			[Symbol(kOutHeaders)
+			]: [Object: null prototype
+			] {
+		accept: [Array
+				],
+		'user-agent': [Array
+				],
+		'accept-encoding': [Array
+				],
+		host: [Array
+				]
+			}
+		},
+	data: {
+	  documentation: 'https: //opencagedata.com/api',
+	  licenses: [
+				[Object
+				]
+			],
+	  rate: { limit: 2500, remaining: 2483, reset: 1684195200
+			},
+	  results: [],
+	  status: { code: 200, message: 'OK'
+			},
+	  stay_informed: {
+		blog: 'https: //blog.opencagedata.com',
+		mastodon: 'https: //en.osm.town/@opencage',
+		twitter: 'https: //twitter.com/OpenCage'
+			},
+	  thanks: 'For using an OpenCage API',
+	  timestamp: {
+		created_http: 'Mon,
+				15 May 2023 21: 19: 08 GMT',
+		created_unix: 1684185548
+			},
+	  total_results: 0
+		}
+	}
