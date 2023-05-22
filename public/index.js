@@ -1,4 +1,5 @@
 // import * as stationData from "./data.json";
+import '../src/dist/outpust.css'
 const stationData = require("./dataTest.json");
 const fs = require('fs');
 console.log(stationData.length);

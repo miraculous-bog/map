@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
-// import requester from '../utils/requester';
+// import './global.css';
 import requester from '../../helper/requester';
-import './globals.css';
 import FuelStationRows from '../FuelStationRows/FuelStationRows';
 import MySelect from '../MySelect/MySelect';
 

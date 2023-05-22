@@ -13,7 +13,8 @@ const data = [
 		},
 		stationInfoId: 468,
 		lat: 50.4210989,
-		lng: 30.5370019
+		lng: 30.5370019,
+		services: ['FOOD', 'GOODS']
 	},
 
 	{
@@ -30,7 +31,8 @@ const data = [
 		},
 		stationInfoId: 1205,
 		lat: 50.438003,
-		lng: 30.508396
+		lng: 30.508396,
+		services: ['CAR_SERVICE', 'OTHER']
 	},
 	{
 		id: 1942,
@@ -46,7 +48,8 @@ const data = [
 		},
 		stationInfoId: 1942,
 		lat: 50.395204,
-		lng: 30.540771
+		lng: 30.540771,
+		services: ['GOODS', 'CAR_SERVICE', 'OTHER']
 	},
 	{
 		id: 2679,
@@ -62,7 +65,8 @@ const data = [
 		},
 		stationInfoId: 2679,
 		lat: 50.403698,
-		lng: 30.560526
+		lng: 30.560526,
+		services: ['FOOD', 'GOODS', 'CAR_SERVICE']
 	},
 
 	{
@@ -79,7 +83,8 @@ const data = [
 		},
 		stationInfoId: 3416,
 		lat: 50.394466,
-		lng: 30.630639
+		lng: 30.630639,
+		services: ['CAR_SERVICE', 'OTHER']
 	},
 	{
 		id: 3411,
@@ -95,7 +100,8 @@ const data = [
 		},
 		stationInfoId: 3416,
 		lat: 50.394466,
-		lng: 30.630639
+		lng: 30.630639,
+		services: ['FOOD', 'CAR_SERVICE', 'OTHER']
 	},
 	{
 		id: 3419,
@@ -111,7 +117,8 @@ const data = [
 		},
 		stationInfoId: 3416,
 		lat: 50.468175,
-		lng: 30.395552
+		lng: 30.395552,
+		services: ['FOOD', 'GOODS',]
 	},
 ];
 

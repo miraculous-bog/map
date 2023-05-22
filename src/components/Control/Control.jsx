@@ -5,17 +5,21 @@ const Control = ({ onSelect, closeRoute }) => {
 
 	const [fuelType, setFuelType] = useState('');
 	const [company, setCompany] = useState('');
+	const [service, setService] = useState('');
 
 	const handleFuelTypeChange = (event) => {
 		setFuelType(event.target.value);
-		onSelect(event.target.value, company);
+		onSelect(event.target.value, company, service);
 	};
 
 	const handleCompanyChange = (event) => {
 		setCompany(event.target.value);
-		onSelect(fuelType, event.target.value);
+		onSelect(fuelType, event.target.value, service);
 	};
-
+	const handleServiceChange = (event) => {
+		setService(event.target.value);
+		onSelect(fuelType, company, event.target.value);
+	};
 	return (
 		<div className={styles.container}>
 			<select className={styles.select} value={fuelType} onChange={handleFuelTypeChange}>
@@ -34,6 +38,13 @@ const Control = ({ onSelect, closeRoute }) => {
 				<option value="SOCAR">SOCAR</option>
 				<option value="UPG">UPG</option>
 				<option value="WOG">WOG</option>
+			</select>
+			<select className={styles.select} value={service} onChange={handleServiceChange}>
+				<option value="">Select service</option>
+				<option value="FOOD">Food</option>
+				<option value="GOODS">Goods</option>
+				<option value="CAR_SERVICE">Car Service</option>
+				<option value="OTHER">Other</option>
 			</select>
 			<button className={styles.buttons} onClick={closeRoute}>Вимк. шлях</button>
 		</div>
