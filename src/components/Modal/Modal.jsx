@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 const fetcher = (path) => fetch(path).then((response) => response.json());
 
 const Modal = ({ visible, setVisible, id }) => {
+	console.log(visible, setVisible, id);
 	const { data, error } = useSWR('http://localhost:8080/station/details/' + id, fetcher);
 	const rootClasses = [styles.modal];
 	if (visible) rootClasses.push(styles.active);

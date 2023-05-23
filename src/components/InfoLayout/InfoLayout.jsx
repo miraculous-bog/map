@@ -31,9 +31,11 @@ const InfoLayout = ({ id, buildRoute }) => {
 		filterStations();
 	}, []);
 
+	const availableFuels = data?.availableFuelsDescription?.split('\n').filter((line) => !!line);
+
 	return (
 		<>
-			<h1 className={styles.title}>{data.name}</h1>
+			{/* <h1 className={styles.title}>{data.name}</h1>
 			<p className={styles.text}>{data.address}</p>
 			<p className={styles.text}><span>Гаряча лінія:</span> {data.address}</p>
 			<p className={styles.text}><span>Доступне пальне:</span> {data.availableFuelsDescription}</p>
@@ -41,7 +43,63 @@ const InfoLayout = ({ id, buildRoute }) => {
 
 			<Link to={data.link}>{data.linkName}</Link>
 			<p className={styles.text}>{data.lastUpdate}</p>
-			<button className={styles.btn} onClick={buildRoute}>Побудувати маршрут</button>
+			<button className={styles.btn} onClick={buildRoute}>Побудувати маршрут</button> */}
+			<div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+				<div className="flex flex-col">
+					<div className="flex flex-col">
+						<strong className="mt-1">{data?.name}</strong>
+						<strong className="mt-1">{data?.address}</strong>
+					</div>
+					<div className="flex mt-1">
+						<strong>Гаряча лінія:</strong>
+						<p className="pl-1 text-blue-600 underline">{data?.hotLine}</p>
+					</div>
+					<div>
+						<p></p>
+					</div>
+					<div className="flex mt-1">
+						<strong>Графік роботи: </strong>
+						<p className="pl-1">{data?.schedule}</p>
+					</div>
+					{availableFuels?.length > 0 ? (
+						<div className="flex flex-col mt-1">
+							<div>
+								<strong>Доступне пальне:</strong>
+							</div>
+							<div className="pl-10">
+								<ul>
+									{availableFuels?.map((info, i) => (
+										<li key={i} className="list-disc">
+											{info}
+										</li>
+									))}
+								</ul>
+							</div>
+						</div>
+					) : (
+						<></>
+					)}
+					{data?.additionalInfo ? (
+						<div className="flex flex-col mt-1">
+							<strong>Додаткова інформація:</strong>
+							<div className="pl-10">{data.additionalInfo}</div>
+						</div>
+					) : (
+						<></>
+					)}
+					<div className="flex justify-between mt-4">
+						<div className="border rounded-md">
+							<Link to={data?.link || '/error'} target="_blank" className="p-2 underline text-blue-600">
+								{data?.linkName}
+							</Link>
+						</div>
+						<div className={'border rounded-md ' + (data?.lastUpdate ? '' : 'hidden')}>
+							<span className="p-2">{data?.lastUpdate}</span>
+						</div>
+					</div>
+					<button className={styles.btn} onClick={buildRoute}>Побудувати маршрут</button>
+				</div>
+			</div>
 		</>
 	);
 };

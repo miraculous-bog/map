@@ -98,7 +98,7 @@ const Map = ({ changeVisible }) => {
 				city: null,
 				fuelType: fuelType === '' ? null : fuelType,
 				companyName: company === '' ? null : company,
-				servicesNames: service === '' ? null : service
+				serviceType: service === '' ? null : service
 			},
 			{
 				'Content-type': 'application/json; charset=UTF-8',

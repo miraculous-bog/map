@@ -21,6 +21,7 @@ const Main = () => {
 	const [selectedCity, setSelectedCity] = useState('');
 	const [selectedFuel, setSelectedFuel] = useState('');
 	const [selectedCompany, setSelectedCompany] = useState('');
+	const [selectedService, setSelectedService] = useState('');
 	const [disable, setDisable] = useState(false);
 
 	useEffect(() => {
@@ -40,6 +41,7 @@ const Main = () => {
 				city: selectedCity === '' ? null : selectedCity,
 				fuelType: selectedFuel === '' ? null : selectedFuel,
 				companyName: selectedCompany === '' ? null : selectedCompany,
+				serviceType: selectedService === '' ? null : selectedService,
 			},
 			{
 				'Content-type': 'application/json; charset=UTF-8',
@@ -88,6 +90,22 @@ const Main = () => {
 						options={[
 							{ value: 'WOG', name: 'WOG' },
 							{ value: 'UPG', name: 'UPG' },
+							{ value: 'BRSM', name: 'BRSM' },
+							{ value: 'SOCAR', name: 'SOCAR' },
+						]}
+						defaultValue='None'
+					/>
+				</div>
+				<div className='pt-1 flex'>
+					<div className='mr-1'>Сервіс:</div>
+					<MySelect
+						value={selectedService}
+						onChange={(service) => setSelectedService(service)}
+						options={[
+							{ value: 'FOOD', name: 'Food' },
+							{ value: 'GOODS', name: 'Goods' },
+							{ value: 'CARD_SERVICE', name: 'Card Service' },
+							{ value: 'OTHER', name: 'Other' },
 						]}
 						defaultValue='None'
 					/>
