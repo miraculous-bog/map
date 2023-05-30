@@ -141,7 +141,7 @@ const Map = ({ changeVisible }) => {
 		<>
 			{loading ? <Loader /> : null}
 			<Control onSelect={handleSelect} closeRoute={() => setDirections(null)} />
-			<GoogleMap defaultZoom={10} defaultCenter={{ lat: 50.4501, lng: 30.523399 }}>
+			<GoogleMap defaultZoom={10} defaultCenter={{ lat: 50.4501, lng: 30.523399 }} language="uk">
 				{filteredData.map((item) => (
 					<Marker
 						key={item.id}
